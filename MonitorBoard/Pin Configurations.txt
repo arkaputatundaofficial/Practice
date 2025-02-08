@@ -1,0 +1,10 @@
+PIN Configurations
+
+LED (Backlight) - D15
+SCK (CLK) - D18
+SDA (MOSI) - D23
+AO (DC) - D2
+RESET (RST) - D4
+CS - D5
+GND - GND
+VCC - 3V3
