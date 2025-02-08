@@ -20,10 +20,10 @@ int brightness = 128;  // Brightness level (0 to 255)
 
 // *** WiFi Credentials ***
 const char* wifiNetworks[][2] = {
-  { "Galaxy M01", "LLs68wCt8H" },
-  { "JioFi2_A70884", "tj72rcers9" },
-  { "Redmi 9A", "nsf5e7qz2uhzfbk" },
-  { "Redmi 9 Power", "malayputatunda367" }
+  { "SSID_1", "PASSWORD_1" },
+  { "SSID_2", "PASSWORD_2" },
+  { "SSID_3", "PASSWORD_3" },
+  { "SSID_4", "PASSWORD_4" }
 };
 const int networkCount = sizeof(wifiNetworks) / sizeof(wifiNetworks[0]);
 
