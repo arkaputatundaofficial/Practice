@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    width: 100%;
+    background-color: #47b06a;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.btn a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#services {
+    width: 100%;
+    height: max-content;
+    padding: 20px 0;
+    background-color: #fff4a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicesCardCollection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 10px 10px lightblue;
+    border-radius: 10px;
+    flex: 1 0 auto;
+    overflow-wrap: break-word;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.banner-img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#weekdayCalendar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+#weekdayCalendar p {
+    padding: 5px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#weekdayCalendar p:hover {
+    background-color: #cccccc;
+}
