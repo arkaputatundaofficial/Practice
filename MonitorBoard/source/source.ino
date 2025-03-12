@@ -5,8 +5,8 @@
 
 // WiFi Configuration
 const bool AccessPointMode = false;
-const char *ssid = "JioFi2_A70884";
-const char *password = "tj72rcers9";
+const char *ssid = "YOUR_SSID";
+const char *password = "YOUR_PASSWORD";
 
 // VGA Pins
 const int redPin = 15;
