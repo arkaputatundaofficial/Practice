@@ -1,0 +1,22 @@
+Network name: Galaxy M01
+Password: LLs68wCt8H
+Network type: WPA/WPA2
+
+Network name: JioFi2_A70884
+Password: tj72rcers9
+Network type: WPA/WPA2
+
+Network name: Redmi 9A
+Password: nsf5e7qz2uhzfbk
+Network type: WPA/WPA2
+
+Network name: Redmi 9 Power
+Password: malayputatunda367
+Network type: WPA/WPA2
+
+const char* wifiNetworks[][2] = {
+    {"Galaxy M01", "LLs68wCt8H"},
+    {"JioFi2_A70884", "tj72rcers9"},
+    {"Redmi 9A", "nsf5e7qz2uhzfbk"},
+    {"Redmi 9 Power", "malayputatunda367"}
+};
