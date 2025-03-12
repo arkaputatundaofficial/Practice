@@ -1,0 +1,13 @@
+VGA -> Jumper Wires -> ESP32
+
+Pink (Thick) -> Red -> D15
+
+White (Thick) -> Green -> D2
+
+Sky Blue (Thick) -> Blue -> D21
+
+Green (Thick) -> Horizontal Sync (Yellow) -> D22
+
+Blue (Thin) -> Vertical Sync (Violet) -> D23
+
+Red (Thin) + White (Thin) -> Ground (Black) -> GND
