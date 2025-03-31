@@ -5,15 +5,15 @@
 
 // WiFi Configuration
 const bool AccessPointMode = false;
-const char *ssid = "YOUR_SSID";
-const char *password = "YOUR_PASSWORD";
+const char *ssid = "WIFI_SSID";
+const char *password = "WIFI_PASSWORD";
 
 // VGA Pins
 const int redPin = 15;
 const int greenPin = 2;
 const int bluePin = 21;
 const int hsyncPin = 22;
-const int vsyncPin = 23;
+const int vsyncPin = 23; 
 
 // Web Server
 WebServer server(80);
@@ -76,9 +76,9 @@ void setup() {
 
     // Initialize VGA
     videodisplay.init(VGAMode::MODE320x240, redPin, greenPin, bluePin, hsyncPin, vsyncPin);
-    videodisplay.clear(videodisplay.RGBA(0, 0, 255));
-    videodisplay.backColor = videodisplay.RGB(0, 0, 255);
-    videodisplay.setFont(Font6x8);
+    videodisplay.clear(videodisplay.RGBA(0, 0, 0)); // Black background
+    videodisplay.backColor = videodisplay.RGB(0, 0, 0); // Black background
+    videodisplay.setFont(Font6x8); // Set the font to Font6x8 (changeable if desired)
 
     // Web Server Routes
     server.on("/", sendPage);
@@ -87,7 +87,8 @@ void setup() {
 
     // Display Connection Info on VGA
     videodisplay.setCursor(0, 0);
-    videodisplay.println("----- VGA Terminal -----");
+    videodisplay.println("MonitorBoard");
+    videodisplay.println("(Group E - CST 2nd Year)");
 
     if (AccessPointMode) {
         videodisplay.print("SSID: ");
