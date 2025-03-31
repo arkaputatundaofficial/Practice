@@ -262,7 +262,7 @@ R"(
 			<div class='modal-content'>
 				<div class='modal-header' id='modalHeader'>
 					<span id="dialogHeader">Edit</span>
-					<span id="close">&times;</span>
+					<span id="close">×</span>
 				</div>
 				<div class='modal-body'>
 					<input type='text' id='modalInputField' placeholder='Add a Note Header...' style='display: none;'>
@@ -340,7 +340,7 @@ R"(
                 }
               };
             xhr.send("value1=" + encodeURIComponent(value1) + "&value2=" + encodeURIComponent(value2));
-			});
+			});   
 
 			// Save changes and update preview
 			saveButton.addEventListener('click',
