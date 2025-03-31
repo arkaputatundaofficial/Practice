@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#nav {
+    display: flex;
+    width: 100%;
+    padding: 10px 2%;
+}
+
+#logo {
+    width: max-content;
+}
+
+#menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+
+#menu ul li {
+    margin-right: 20px;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: 1s ease-in-out slideInFromBottom;
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.btnScroll {
+    background-color: #1652F0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 12px 16px;
+    animation: 1.5s ease-in-out slideInFromBottom;
+}
+
+.btnScroll:disabled {
+    opacity: .5;
+}
+
+.btnScroll:hover {
+    background-color: #1222cae0;
+}
+
+.btnScroll:active {
+    background-color: #1222cae0;
+    border-color: #1222cae0;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#heroLeft {
+    width: 50%;
+    height: 100vh;
+}
+
+#heroRight {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroTopLeft {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroRight img {
+    height: 80vh;
+    width: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .75s;
+}
+
+#heroRight img:hover {
+    transform: scale(1.05);
+}
+#carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+#carousel {
+    display: flex;
+    gap: 10px;
+}
+.card {
+    width: 150px;
+    height: 100px;
+    background-color: lightblue;
+    display: none;
+    /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
