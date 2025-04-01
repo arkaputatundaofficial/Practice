@@ -27,32 +27,46 @@
     </div>
     <div id="main">
         <h1>Welcome to our Website!</h1><br>
-        <button class="btnScroll">SCROLL DOWN</button>
+        <a href="#hero"><button class="btnScroll">SCROLL DOWN</button></a>
     </div>
     <div id="hero">
         <div id="heroLeft">
             <div id="heroTopLeft">
                 <h2>HeroProduct</h2><br>
-                <button class="btnScroll">Learn More</button>
+                <a href="#slideshow"><button class="btnScroll">Learn More</button></a>
             </div>
         </div>
         <div id="heroRight">
             <img src="https://picsum.photos/200/300">
         </div>
     </div>
-
-    <!-- Product Carousel Section -->
-    <div id="carouselContainer">
-    <div id="carousel">
-        <div class="card" id="card1">Product 1</div>
-        <div class="card" id="card2">Product 2</div>
-        <div class="card" id="card3">Product 3</div>
-        <div class="card" id="card4">Product 4</div>
-        <div class="card" id="card5">Product 5</div>
-        <div class="card" id="card6">Product 6</div>
+    <div id="slideshow">
+        <h2>Slideshow</h2><br><br><br><br>
+        <div class="wrap">
+            <ul class="carousel is-set">
+                <li class="carousel-seat"><h2>1</h2></li>
+                <li class="carousel-seat"><h2>2</h2></li>
+                <li class="carousel-seat"><h2>3</h2></li>
+                <li class="carousel-seat"><h2>4</h2></li>
+                <li class="carousel-seat"><h2>5</h2></li>
+                <li class="carousel-seat"><h2>6</h2></li>
+                <li class="carousel-seat"><h2>7</h2></li>
+                <li class="carousel-seat"><h2>8</h2></li>
+                <li class="carousel-seat"><h2>9</h2></li>
+                <li class="carousel-seat is-ref"><h2>10</h2></li>
+            </ul>
+            <!-- Navigation Buttons -->
+            <div class="carousel-nav">
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+            </div>
+        </div><br><br><br><br>
+        <a href="#thankYou"><button class="btnScroll">SCROLL DOWN</button></a>
     </div>
-</div>
-
+    <div id="thankYou">
+        <h1>THANK YOU!</h1>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
