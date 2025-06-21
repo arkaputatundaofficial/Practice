@@ -1,53 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <h1>Redirecting...</h1>
-    <p>If you are not redirected automatically, <a href="login-page/index.html">Log In</a>.</p>
-    <script>
-        window.onload = function () {
-            const isLoggedIn = localStorage.getItem("isLoggedIn");
-            if (isLoggedIn === "true") {
-                window.location.href = "landing-page/index.html";
-            } else {
-                window.location.href = "login-page/index.html";
-            }
-        };
-    </script>
+    <div id="container">
+        <form>
+            <h2>Login</h2>
+            <div id="divEmail">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+            </div>
+            <div id="divPassword">
+                <i class="fa-solid fa-lock" id="passLock"></i>
+                <input type="password" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+            </div>
+            <div id="divOptions">
+                <div id="checkbox">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                <div>
+                    <a href="#" id="forgotPassword">Forgot Password?</a>
+                </div>
+            </div>
+            <div id="divLogin">
+                <input type="submit" value="Login" id="login">
+            </div>
+            <div id="divNoAccount">
+                <p>Don't have an account? <b><a href="#" id="noAccount">Register</a></b></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
